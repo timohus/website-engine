@@ -6,7 +6,8 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
+.space {
+    display: inline-block;
+    width: 30px;
 }
 

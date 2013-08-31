@@ -1,7 +1,1 @@
-<?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
+<a href="/">Главная</a><span class="space">&nbsp;</span><a href="/goods">Товары</a>

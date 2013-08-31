@@ -1,1 +1,3 @@
-this is Goods
+<p>
+    <?php echo $this->content ?>
+</p>
