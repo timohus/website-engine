@@ -5,9 +5,23 @@
  */
 
 class Engine {
+    public $url;
     public function __construct() {
-        echo "Welcome to website engine";
+
+        $this->url = $_SERVER['REQUEST_URI'];
+        if ($this->url !== '/'){
+            $this->loadPage($_SERVER['DOCUMENT_ROOT']."/site/pages/".$_GET['page'].".php");
+        }
+        else {
+            $this->loadPage($_SERVER['DOCUMENT_ROOT']."/site/pages/index.php");
+        }
+        
     }
+    
+    public function loadPage($url){
+        include_once $url;
+    }
+    
 }
 
 ?>
